@@ -12,19 +12,38 @@
                 tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_coal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/coal"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_i_am"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="400sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/image_coal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
         android:text="@string/title"
-        android:textColor="@android:color/black"
-        android:textSize="40sp"/>
+        android:textColor="@android:color/background_dark"
+        android:textSize="50sp"/>
+
+    <TextView
+        android:id="@+id/text_poor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_i_am"
+        android:layout_alignBottom="@+id/text_i_am"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/text_i_am"
+        android:layout_toRightOf="@+id/text_i_am"
+        android:text="@string/title1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"/>
 </RelativeLayout>
